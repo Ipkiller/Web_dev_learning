@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        body {
+            background: linear-gradient(to bottom right, #121212 30%, #1E3A8A 100%);
+            padding-top: 50px;
+            padding-left: 150px;
+            padding-right: 150px;
+            background-repeat: no-repeat;
+            overflow-y: hidden;
+            /* Add this line */
+            /* Adjust colors and percentages as needed */
+        }
+
+        .eclips1 {
+            height: 500.3px;
+            width: 500.3px;
+            border-radius: 50%;
+            position: absolute;
+            top: -200px;
+            left: -200px;
+            background-image: linear-gradient(to bottom right, #00C2FF 0%, #ff00b7 100%);
+            filter: blur(110px) opacity(0.7);
+            z-index: -1;
+            overflow: hidden;
+            /* Add this line */
+        }
+
+        .eclips2 {
+            /* display: none; */
+            height: 300.3px;
+            width: 300.3px;
+            border-radius: 50%;
+            position: absolute;
+            bottom: -150px;
+            right: -150px;
+            background-image: linear-gradient(to bottom right, #00C2FF 0%, #ff00b7 100%);
+            filter: blur(110px) opacity(0.7);
+            z-index: -1;
+            overflow: hidden;
+            /* Add this line */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="eclips1"></div>
+    <div class="eclips2"></div>
+    <div></div>
+</body>
+
+</html>
