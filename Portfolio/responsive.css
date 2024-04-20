@@ -1,43 +1,103 @@
-@media screen and (max-width: 1281px) {
+@media screen and (max-width: 667px) {
 
-    nav {
-        font-size: 1.3vw;
+    nav .menu_bar {
+        display: none;
     }
 
-    nav .theme svg {
-        height: 25px;
-        width: 25px;
+    body {
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 
-    main .content {
-        font-size: 1.2vw;
+    nav .logo_tag,
+    nav .theme img {
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 667px) {
+
+    nav .bar {
+        display: none;
     }
 
-    main .img svg {
-        width: 300px;
-        height: 300px;
+    nav .bar_window {
+        display: none;
+    }
+
+    html {
+        height: 100%;
     }
 }
 
 @media screen and (max-width: 768px) {
-    nav {
-        font-size: 1.3vw;
+    main {
+        flex-direction: column-reverse;
     }
 
-    main .content .para {
-        width: 300px;
+    main .img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     main .img svg {
-        width: 200px;
-        height: 200px;
+        width: 15rem;
+    }
+
+    main .content h1 {
+        font-size: 1.2rem;
+    }
+
+    main .content .para {
+        font-size: 0.8rem;
     }
 }
 
-@media screen and (max-width: 649px) {
-    nav {}
-
+@media screen and (max-width: 375px) {
     main {
-        display: none;
+        flex-direction: column-reverse;
+    }
+
+    main .img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main .img svg {
+        width: 10.5rem;
+    }
+
+    main .content h1 {
+        font-size: 1.2rem;
+    }
+
+    main .content .para {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    main {
+        flex-direction: column-reverse;
+    }
+
+    main .img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main .img svg {
+        width: 10.5rem;
+    }
+
+    main .content h1 {
+        font-size: 0.9rem;
+    }
+
+    main .content .para {
+        font-size: 0.8rem;
     }
 }
