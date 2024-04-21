@@ -6,8 +6,7 @@ html {
 }
 
 body {
-    background: linear-gradient(to bottom right, #121212 30%, #1E3A8A 100%);
-    padding-top: 3rem;
+    padding-top: 2.5rem;
     padding-left: 5rem;
     padding-right: 5rem;
     padding-bottom: 5rem;
@@ -15,12 +14,34 @@ body {
     overflow-x: hidden;
 }
 
+.dark_theme {
+    background: linear-gradient(to bottom right, #121212 30%, #1E3A8A 100%);
+    color: #E5E7EB;
+
+}
+
+.dark_eclips {
+    background-image: linear-gradient(to bottom right, #00C2FF 0%, #ff00b7 100%);
+
+}
+
+.light_theme {
+    background: #E5E7EB;
+    color: #1F2937;
+
+}
+
+.light_eclips {
+    background-image: linear-gradient(to bottom right, #F22FB0 0%, #F58A25 100%, #7061A3 100%);
+
+}
+
+
 .eclips1,
 .eclips2 {
     border-radius: 50%;
     position: absolute;
     position: fixed;
-    background-image: linear-gradient(to bottom right, #00C2FF 0%, #ff00b7 100%);
     filter: blur(110px) opacity(0.7);
     z-index: -1;
 }
@@ -55,7 +76,7 @@ nav .bar svg {
 }
 
 nav .bar {
-    transition: 1s;
+    transition: 0.5s;
 }
 
 nav .bar:active {
@@ -63,7 +84,6 @@ nav .bar:active {
 }
 
 nav .logo_tag {
-    color: #ffffff;
     font-weight: bold;
     font-size: 1rem;
     padding-bottom: 0.25rem;
@@ -99,16 +119,18 @@ nav .menu_bar {
 }
 
 nav .bar_window p {
-    color: #ffffff;
     font-size: 0.9rem;
     font-weight: 600;
     display: inline-block;
     text-align: center;
+    transition: transform 0.5s;
+    cursor: pointer;
 }
 
-nav .bar_window p:hover {
-    border-bottom: solid 2px white;
+nav .bar_window p:active {
+    transform: scale(0.8);
 }
+
 
 nav .menu_bar :nth-child(2) {
     padding-bottom: 0.25rem;
@@ -120,12 +142,11 @@ nav .menu_bar :nth-child(1) {
 }
 
 nav .menu_bar p {
-    color: #F9FAFB;
     font-size: 0.9rem;
     font-weight: 400;
 }
 
-nav .theme img {
+nav .theme svg {
     width: 1rem;
     padding-bottom: 0.25rem
 }
@@ -137,7 +158,6 @@ main {
 }
 
 main .content h1 {
-    color: #ffffff;
     font-size: 1.5rem;
 }
 
@@ -157,7 +177,6 @@ main .content h1 {
 }
 
 main .content .para {
-    color: #E5E7EB;
     font-size: 1rem;
     max-width: 30rem;
 }
@@ -165,7 +184,6 @@ main .content .para {
 .content .btn {
     width: 7rem;
     height: 1.5rem;
-    background-color: #E5E7EB;
     border-radius: 5px;
     display: flex;
     font-size: 0.7rem;
@@ -176,9 +194,30 @@ main .content .para {
     cursor: pointer;
 }
 
+.dark_btn {
+    background-color: #E5E7EB;
+    color: #1F2937;
+
+}
+
+.light_btn {
+    background-color: #1F2937;
+    color: #E5E7EB;
+}
+
+.light_btn svg {
+    fill: #E5E7EB;
+
+}
+
+.dark_btn svg {
+    fill: #1F2937;
+
+}
+
+
 .content .btn :first-child {
     display: flex;
-    color: #1F2937;
     gap: 0.5rem;
     justify-content: center;
     align-items: center;
