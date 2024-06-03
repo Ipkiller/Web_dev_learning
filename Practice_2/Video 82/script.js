@@ -1,5 +1,7 @@
 console.log(a1);
-
+const sum = async (a, b, c)=>{
+    return a+b+c
+}
 
 (async function main(){ 
     // let a = await sleep()
@@ -35,8 +37,4 @@ const sleep = async ()=>{
             resolve(45)
         }, 1000);
     })
-}
-
-const sum = async (a, b, c)=>{
-    return a+b+c
 }

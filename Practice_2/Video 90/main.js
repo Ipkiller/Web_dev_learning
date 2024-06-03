@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 3000
+const port = 2000
 const blog = require('./routes/blog')
 const fs = require("fs")
 
@@ -14,6 +14,8 @@ app.use((req, res, next) => {
     req.harry = "I am harry bhai";
     fs.appendFileSync("logs.txt", `${Date.now()} is a ${req.method}\n`)
     console.log(`${Date.now()} is a ${req.method}`)
+    console.log(req.harry);
+    
     // res.send("Hacked by Middlware 1")
     next()
 })
@@ -26,7 +28,7 @@ app.use((req, res, next) => {
 })
 
 app.get('/', (req, res) => {
-    res.send('Hello World!')
+    res.send('Bad World!')
 })
 
 app.get('/about', (req, res) => {

@@ -11,6 +11,6 @@
   
 //   });
 
-const a = require("./mymodule2.js")
+const c = require("./mymodule2.js")
 
-console.log(a, __dirname, __filename)
+console.log(c)

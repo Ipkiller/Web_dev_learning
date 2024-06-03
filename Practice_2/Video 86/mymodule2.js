@@ -3,5 +3,4 @@
 //     b:4
 // }
 
-let c = 56;
-module.exports = c;
+export let c = 56;
